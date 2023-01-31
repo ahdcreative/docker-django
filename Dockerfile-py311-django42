@@ -1,6 +1,6 @@
 FROM python:3.11-slim-bullseye@sha256:3d260508893319ee271989fe16c0ddf13c710ec5ce1d0708cda7bc30da8389e7
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-COPY requirements/py311-django41.txt .
+COPY requirements/py311-django42.txt .
 RUN python -m pip install -r py311-django42.txt
 WORKDIR /
