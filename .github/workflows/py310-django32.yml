@@ -29,7 +29,7 @@ jobs:
       - name: Extract Metadata
         uses: docker/metadata-action@507c2f2dc502c992ad446e3d7a5dfbe311567a96 # v4.3.0
         with:
-          image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           tags: py310-django32
       - name: Build & Publish
