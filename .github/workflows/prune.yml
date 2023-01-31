@@ -1,0 +1,24 @@
+name: Cleanup
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * 0"
+env:
+  registry: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  Cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Prune
+        uses: vlaurin/action-ghcr-prune@v0.5.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          dry-run: true
+          keep-younger-than: 7
+          keep-last: 2
+          prune-untagged: true
