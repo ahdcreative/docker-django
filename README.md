@@ -25,7 +25,7 @@ There are several images based on Python Versions (3.10 / 3.11) and Django versi
     <p>py310-django41 (Python 3.10 with Django 4.1.5)</p>
     <p>py310-django42 (Python 3.10 with Django 4.2a1)</p>
     <p>py311-django41 (Python 3.11 with Django 4.1.5)</p>
-    <p>py311-django41 (Python 3.11 wih Django 4.2a1)</p>
+    <p>py311-django42 (Python 3.11 wih Django 4.2a1)</p>
 </details>
 
 ## Usage
