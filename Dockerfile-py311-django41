@@ -1,4 +1,4 @@
-FROM python:3.11-slim-bullseye@sha256:3d260508893319ee271989fe16c0ddf13c710ec5ce1d0708cda7bc30da8389e7
+FROM python:3.11-slim-bullseye@sha256:7f0ea9ea95d32db6ee8f4973aa76d777923b0cdd83ebec6fd63a20fc7d08f4cf
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 COPY requirements/py311-django41.txt .
